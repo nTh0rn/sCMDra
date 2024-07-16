@@ -76,12 +76,12 @@ goto select_repo
 	echo.
 	___cecho {C0}                                                                       {07}
 	echo.
-	___cecho {C0}             MANUAL STEP REQUIRED FOR 100^% UNINSTALLATION              {07}
+	___cecho {C0}             MANUAL STEP REQUIRED FOR 100%% UNINSTALLATION              {07}
 	echo.
 	___cecho {C0}                                                                       {07}
 	echo.
 	echo.
-	___cecho {0C}Delete the sCMDra path from your user's environment variables.{07}
+	___cecho {0C}Delete the sCMDra path from your user's environment Path variable{07}
 	echo.
 	echo.
 	echo 1. In the Start Menu, search "Edit the system environment variables" and press Enter
