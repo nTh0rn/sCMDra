@@ -21,10 +21,19 @@
     <li>
       <a href="#installation">Installation</a>
       <ul>
+        <li><a href="#automatic-installer">Automatic Installer</a></li>
+      </ul>
+      <ul>
         <li><a href="#manual-installation">Manual Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li>
+      <a href="#uninstallation">Installation</a>
+      <ul>
+        <li><a href="#manual-uninstallation">Manual Installation</a></li>
+      </ul>
+    </li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -35,24 +44,24 @@
 
 sCMDra is quickly accessible in Command Prompt using a customizable keyword, `repo` by default. It parses a specified folder for Git repositories and lists them for you to access quickly.
 
-![Screenshot](https://nthorn.com/images/sCMDra/sCMDra.png)
-
 After selecting a repository, your CMD session is redirected to the corresponding folder and Windows Explorer is opened to the selected repository.
+
+![Screenshot](https://nthorn.com/images/sCMDra/sCMDra.png)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Installation
 
 <ins>IMPORTANT NOTICE:</ins>
-Even if you use the automatic installer, you will need to **manually** add your installation directory to your user's environment Path variable. Instructions for this are included in this README as well as during the automatic installation process.
+Even if you use the automatic installer, you will need to **manually** add your installation directory to your user's environment Path variable. Instructions for this are included in `Install sCMDra.bat`.
 
 1. Clone/download the repo
    ```sh
    git clone https://github.com/nTh0rn/sCMDra.git
    ```
 
-### Automatic Installation
-1. Run `Install sCMDra.bat`.
+### Automatic Installer
+1. Run `Install sCMDra.bat` and follow the steps provided.
 
 ### Manual Installation
 1. Create an installation directory (`C:\sCMDra\` is `Install sCMDra.bat`'s default).
@@ -61,9 +70,8 @@ Even if you use the automatic installer, you will need to **manually** add your 
 4. Inside `___repo.bat`, Find and replace in instances of `INSTALL_TEMP` with your installation directory, without quotes.
 5. Inside `___repo.bat`, Find and replace in instances of `REPO_TEMP` with where your repositories are located, without quotes.
 6. Rename `___repo.bat` to the keyword you'd like to use to access sCMDra (`repo.bat` is `Install sCMDra.bat`'s default).
-   * You will not need to type the `.bat` file extension to access sCMDra, but be sure to include it in the file's name.
+   * You will not need to type the `.bat` file extension to access sCMDra in Command Prompt, but be sure to include the extension in the file's name.
 
-<!-- USAGE EXAMPLES -->
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
@@ -72,39 +80,19 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Uninstallation
 
+<ins>IMPORTANT NOTICE:</ins>
+Even if you use the automatic uninstaller, you will need to **manually** remove your installation directory from your user's environment Path variable. Instructions for this are included during the automatic uninstallation.
 
-<!-- ROADMAP -->
-## Roadmap
+### Automatic Uninstaller
+1. Access sCMDra in Command Prompt by using your access keyword (`repo` by default).
+2. Select "Additional Options".
+3. Select "Uninstall sCMDra" and follow the steps provided.
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/nTh0rn/sCMDra/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+### Manual Uninstallation
+1. Navigate to and delete the installation folder while sCMDra is not running (`C:\sCMDra\` by default).
+2. Remove the installation folder from your user's environment Path variable.
 
 <!-- LICENSE -->
 ## License
