@@ -61,7 +61,7 @@ Even if you use the automatic installer, you will need to **manually** add your 
 4. Inside `___repo.bat`, Find and replace in instances of `INSTALL_TEMP` with your installation directory, without quotes.
 5. Inside `___repo.bat`, Find and replace in instances of `REPO_TEMP` with where your repositories are located, without quotes.
 6. Rename `___repo.bat` to the keyword you'd like to use to access sCMDra (`repo.bat` is `Install sCMDra.bat`'s default).
-6.1 You will not need to type the `.bat` file extension to access sCMDra, but be sure to include it in the file's name.
+  * You will not need to type the `.bat` file extension to access sCMDra, but be sure to include it in the file's name.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
