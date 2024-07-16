@@ -33,61 +33,33 @@
 
 ## About
 
-![Screenshot](https://nthorn.com/images/sCMDra/sCMDra.png)
-
 sCMDra is quickly accessible in Command Prompt using a customizable keyword, `repo` by default. It parses a specified folder for Git repositories and lists them for you to access quickly.
-
+![Screenshot](https://nthorn.com/images/sCMDra/sCMDra.png)
+After selecting a repository, your CMD session is redirected to the corresponding folder and Windows Explorer is opened to the selected repository.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## Installation
 
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
+#### IMPORTANT NOTICE
+Even if you use the automatic installer, you will need to **manually** add your installation directory to your user's environment Path variable.
 
 1. Clone/download the repo
    ```sh
    git clone https://github.com/nTh0rn/sCMDra.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## Automatic Installation
+`Install sCMDra.bat` 
+
+### Manual Installation
+1. Create an installation directory.
+2. Add the installation directory to your user's environment Path variable.
+3. Relocate `___repo.bat` to your installation directory.
+4. Inside `___repo.bat`, Find and replace in instances of `INSTALL_TEMP` with your installation directory, without quotes.
+5. Inside `___repo.bat`, Find and replace in instances of `REPO_TEMP` with where your repositories are located, without quotes.
+6. Rename `___repo.bat` to the keyword you'd like to use to access sCMDra (`repo.bat` is the automatic installer's default).
 
 <!-- USAGE EXAMPLES -->
 ## Usage
