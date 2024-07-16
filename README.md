@@ -43,15 +43,17 @@
   </ol>
 </details>
 
+
+
 <!-- ABOUT -->
 ## About
+sCMDra parses your repositories and lists them in Command Prompt from a single command, allowing quick access to your projects from anywhere.
 
-sCMDra is quickly accessible in Command Prompt using a customizable keyword, `repo` by default. It parses a specified folder for Git repositories and lists them for you to access quickly.
-
-After selecting a repository, your CMD session is redirected to the corresponding folder and Windows Explorer is opened to the selected repository.
+After selecting a repository, your CMD session is redirected and Windows Explorer is opened.
 
 ![Screenshot](https://nthorn.com/images/sCMDra/sCMDra.png)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 <!-- INSTALLATION -->
@@ -86,6 +88,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+
 <!-- UNINSTALLATION -->
 ## Uninstallation
 
@@ -100,6 +103,8 @@ Even if you use the automatic uninstaller, you will need to **manually** remove 
 ### Manual Uninstallation
 1. Navigate to and delete the installation folder while sCMDra is not running (`C:\sCMDra\` by default).
 2. Remove the installation folder from your user's environment Path variable.
+
+
 
 <!-- LICENSE -->
 ## License
