@@ -43,7 +43,7 @@ After selecting a repository, your CMD session is redirected to the correspondin
 
 ## Installation
 
-#### IMPORTANT NOTICE
+<ins>IMPORTANT NOTICE</ins>
 Even if you use the automatic installer, you will need to **manually** add your installation directory to your user's environment Path variable.
 
 1. Clone/download the repo
@@ -61,7 +61,7 @@ Even if you use the automatic installer, you will need to **manually** add your 
 3. Relocate `___repo.bat` to your installation directory.
 4. Inside `___repo.bat`, Find and replace in instances of `INSTALL_TEMP` with your installation directory, without quotes.
 5. Inside `___repo.bat`, Find and replace in instances of `REPO_TEMP` with where your repositories are located, without quotes.
-6. Rename `___repo.bat` to the keyword you'd like to use to access sCMDra (`repo.bat` is the automatic installer's default).
+6. Rename `___repo.bat` to the keyword you'd like to use to access sCMDra (`repo.bat` is `Install sCMDra.bat`'s default).
 
 <!-- USAGE EXAMPLES -->
 ## Usage
