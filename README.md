@@ -34,7 +34,9 @@
 ## About
 
 sCMDra is quickly accessible in Command Prompt using a customizable keyword, `repo` by default. It parses a specified folder for Git repositories and lists them for you to access quickly.
+
 ![Screenshot](https://nthorn.com/images/sCMDra/sCMDra.png)
+
 After selecting a repository, your CMD session is redirected to the corresponding folder and Windows Explorer is opened to the selected repository.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
