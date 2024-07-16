@@ -43,17 +43,16 @@ After selecting a repository, your CMD session is redirected to the correspondin
 
 ## Installation
 
-<ins>IMPORTANT NOTICE</ins>
-Even if you use the automatic installer, you will need to **manually** add your installation directory to your user's environment Path variable.
+<ins>IMPORTANT NOTICE:</ins>
+Even if you use the automatic installer, you will need to **manually** add your installation directory to your user's environment Path variable. Instructions for this are included in this README as well as during the automatic installation process.
 
 1. Clone/download the repo
    ```sh
    git clone https://github.com/nTh0rn/sCMDra.git
    ```
 
-
 ## Automatic Installation
-`Install sCMDra.bat` 
+1. Run `Install sCMDra.bat`.
 
 ### Manual Installation
 1. Create an installation directory.
