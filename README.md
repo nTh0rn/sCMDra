@@ -4,7 +4,7 @@
 <h2 align="center">Simple Command Prompt Repository Access</h2>
 
   <p align="center">
-    A simple Git repository access tool for Command Prompt.
+    A simple Git repository access tool for Command Prompt that automatically parses what folders are Git folders and lists them for quick access.
     <br />
     <a href="https://github.com/nTh0rn/sCMDra/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
