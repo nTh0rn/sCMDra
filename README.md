@@ -47,11 +47,10 @@
 
 <!-- ABOUT -->
 ## About
-sCMDra parses your repositories and lists them in Command Prompt from a single command, allowing quick access to your projects from anywhere.
+sCMDra parses your Git repositories and lists them in Command Prompt from a single command, allowing quick access to your projects from anywhere.
 
-After selecting a repository, your CMD session is redirected and Windows Explorer is opened.
+After selecting a repository, your Command Prompt session is redirected and Windows Explorer is opened to the corresponding directory.
 
-![Screenshot](https://nthorn.com/images/sCMDra/sCMDra.png)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -79,11 +78,16 @@ Even if you use the automatic installer, you will need to **manually** add the i
 6. Rename `___repo.bat` to the keyword you'd like to use to access sCMDra (`repo.bat` is `Install sCMDra.bat`'s default).
    * You will not need to type the `.bat` file extension to access sCMDra in Command Prompt, but be sure to include the extension in the file's name.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- USAGE -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Access sCMDra by typing in your keyword into Command Prompt from any directory.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+![Screenshot](https://nthorn.com/images/sCMDra/sCMDra.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,6 +107,8 @@ Even if you use the automatic uninstaller, you will need to **manually** remove 
 ### Manual Uninstallation
 1. Navigate to and delete the installation folder while sCMDra is not running (`C:\sCMDra\` by default).
 2. Remove the installation folder from your user's environment Path variable.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
