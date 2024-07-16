@@ -33,7 +33,7 @@
 
 ## About
 
-![Screenshot][https://nthorn.com/images/sCMDra/sCMDra.png]]
+![Screenshot](https://nthorn.com/images/sCMDra/sCMDra.png)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `nTh0rn`, `sCMDra`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
