@@ -1,42 +1,7 @@
-::[Bat To Exe Converter]
-::
-::fBE1pAF6MU+EWHreyFA1OBRrQQWMPWy/FIlS6+345+XJp1UYNA==
-::fBE1pAF6MU+EWHreyFA1OBRrQQWMPWy/FIkO7fj0oeiGti0=
-::YAwzoRdxOk+EWAnk
-::fBw5plQjdG8=
-::YAwzuBVtJxjWCl3EqQJgSA==
-::ZR4luwNxJguZRRnk
-::Yhs/ulQjdF+5
-::cxAkpRVqdFKZSDk=
-::cBs/ulQjdF+5
-::ZR41oxFsdFKZSDk=
-::eBoioBt6dFKZSDk=
-::cRo6pxp7LAbNWATEpSI=
-::egkzugNsPRvcWATEpSI=
-::dAsiuh18IRvcCxnZtBJQ
-::cRYluBh/LU+EWAnk
-::YxY4rhs+aU+JeA==
-::cxY6rQJ7JhzQF1fEqQJQ
-::ZQ05rAF9IBncCkqN+0xwdVs0
-::ZQ05rAF9IAHYFVzEqQJQ
-::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
-::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
-::cRolqwZ3JBvQF1fEqQJQ
-::dhA7uBVwLU+EWDk=
-::YQ03rBFzNR3SWATElA==
-::dhAmsQZ3MwfNWATElA==
-::ZQ0/vhVqMQ3MEVWAtB9wSA==
-::Zg8zqx1/OA3MEVWAtB9wSA==
-::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFBlGRQeJAE+1BaAR7ebv/NaurF4JVe4zOJz495CcIa4W8kCE
-::YB416Ek+ZW8=
-::
-::
-::978f952a14a936cc963da21a135fa983
 @echo off
+cd %~dp0
 
 ::Ensure administrator access
-cd %~dp0
     if "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
 >nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
 ) ELSE (
@@ -84,6 +49,7 @@ set repo_dir=""
 	cls
 	goto main
 	
+
 :: Installation Selection Function
 ::
 :: Allows the user to select their form of installation.
@@ -119,9 +85,10 @@ set repo_dir=""
 	cls
 	call :invalid_param main
 
+
 :: Express Installation Function
 ::
-:: Simply directs the user to the default installation.
+:: Directs the user to the default installation.
 :express
 	cls
 	___cecho {09}EXPRESS installation{07}
@@ -172,8 +139,6 @@ set "psCommand="(new-object -COM 'Shell.Application')^
 .BrowseForFolder(0,'Please choose a folder.',0,0).self.path""
 for /f "usebackq delims=" %%I in (`powershell %psCommand%`) do set "folder=%%I"
 goto :eof
-
-
 
 :: Installation Function
 ::
