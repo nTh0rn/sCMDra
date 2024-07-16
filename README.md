@@ -4,7 +4,7 @@
 <h2 align="center">Simple Command Prompt Repository Access</h2>
 
   <p align="center">
-    A simple Git repository access tool for Command Prompt that automatically parses what folders are Git folders and lists them for quick access.
+    A simple Git repository access tool for Command Prompt.
     <br />
     <a href="https://github.com/nTh0rn/sCMDra/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
@@ -35,7 +35,7 @@
 
 ![Screenshot](https://nthorn.com/images/sCMDra/sCMDra.png)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `nTh0rn`, `sCMDra`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+sCMDra is quickly accessible in Command Prompt using a customizable keyword, `repo` by default. It parses a specified folder for Git repositories and lists them for you to access quickly.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
