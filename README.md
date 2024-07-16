@@ -31,7 +31,10 @@
     <li>
       <a href="#uninstallation">Installation</a>
       <ul>
-        <li><a href="#manual-uninstallation">Manual Installation</a></li>
+        <li><a href="#automatic-uninstaller">Automatic Unnstaller</a></li>
+      </ul>
+      <ul>
+        <li><a href="#manual-uninstallation">Manual Unnstallation</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>
@@ -40,6 +43,7 @@
   </ol>
 </details>
 
+<!-- ABOUT -->
 ## About
 
 sCMDra is quickly accessible in Command Prompt using a customizable keyword, `repo` by default. It parses a specified folder for Git repositories and lists them for you to access quickly.
@@ -50,10 +54,11 @@ After selecting a repository, your CMD session is redirected to the correspondin
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- INSTALLATION -->
 ## Installation
 
-<ins>IMPORTANT NOTICE:</ins>
-Even if you use the automatic installer, you will need to **manually** add your installation directory to your user's environment Path variable. Instructions for this are included in `Install sCMDra.bat`.
+**<ins>IMPORTANT NOTICE:</ins>**
+Even if you use the automatic installer, you will need to **manually** add the installation directory to your user's environment Path variable. Instructions for this are included in `Install sCMDra.bat`.
 
 1. Clone/download the repo
    ```sh
@@ -61,7 +66,7 @@ Even if you use the automatic installer, you will need to **manually** add your 
    ```
 
 ### Automatic Installer
-1. Run `Install sCMDra.bat` and follow the steps provided.
+1. Run `Install sCMDra.bat` and follow the steps within.
 
 ### Manual Installation
 1. Create an installation directory (`C:\sCMDra\` is `Install sCMDra.bat`'s default).
@@ -80,10 +85,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+<!-- UNINSTALLATION -->
 ## Uninstallation
 
-<ins>IMPORTANT NOTICE:</ins>
-Even if you use the automatic uninstaller, you will need to **manually** remove your installation directory from your user's environment Path variable. Instructions for this are included during the automatic uninstallation.
+**<ins>IMPORTANT NOTICE:</ins>**
+Even if you use the automatic uninstaller, you will need to **manually** remove the installation directory from your user's environment Path variable. Instructions for this are included during the automatic uninstallation.
 
 ### Automatic Uninstaller
 1. Access sCMDra in Command Prompt by using your access keyword (`repo` by default).
@@ -117,16 +124,13 @@ Project Link: [https://github.com/nTh0rn/sCMDra](https://github.com/nTh0rn/sCMDr
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
+* [Confirm administrator mode](https://stackoverflow.com/questions/1894967/how-to-request-administrator-access-inside-a-batch-file)
+* [Echo with colors](https://www.codeproject.com/Articles/17033/Add-Colors-to-Batch-Files)
 * []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/nTh0rn/sCMDra.svg?style=for-the-badge
 [contributors-url]: https://github.com/nTh0rn/sCMDra/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/nTh0rn/sCMDra.svg?style=for-the-badge
