@@ -51,16 +51,17 @@ Even if you use the automatic installer, you will need to **manually** add your 
    git clone https://github.com/nTh0rn/sCMDra.git
    ```
 
-## Automatic Installation
+### Automatic Installation
 1. Run `Install sCMDra.bat`.
 
 ### Manual Installation
-1. Create an installation directory.
+1. Create an installation directory (`C:\sCMDra\` is `Install sCMDra.bat`'s default).
 2. Add the installation directory to your user's environment Path variable.
-3. Relocate `___repo.bat` to your installation directory.
+3. Relocate `___repo.bat` and `___cecho.exe` to your installation directory.
 4. Inside `___repo.bat`, Find and replace in instances of `INSTALL_TEMP` with your installation directory, without quotes.
 5. Inside `___repo.bat`, Find and replace in instances of `REPO_TEMP` with where your repositories are located, without quotes.
 6. Rename `___repo.bat` to the keyword you'd like to use to access sCMDra (`repo.bat` is `Install sCMDra.bat`'s default).
+6.1 You will not need to type the `.bat` file extension to access sCMDra, but be sure to include it in the file's name.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
