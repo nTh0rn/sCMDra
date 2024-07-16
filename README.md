@@ -1,16 +1,7 @@
 
 <a id="readme-top"></a>
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-<br />
 <div align="center">
-<h3 align="center">Simple Command Prompt Repository Access</h3>
+<h2 align="center">Simple Command Prompt Repository Access</h2>
 
   <p align="center">
     A simple Git repository access tool for Command Prompt.
