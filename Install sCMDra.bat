@@ -120,7 +120,7 @@ set repo_dir=""
 	echo You've selected %install_dir%.
 	echo.
 	:retry_acc
-	echo What command would you like to access sCMDra with? (For example, "repo", "sCMDra", "projects")
+	echo What command would you like to access sCMDra with? (For example, "repo", "$", or "projects")
 	___cecho {0C}Must contain only only "a-z 0-9 -_.@#$", NO SPACES PERMITTED.{07}
 	echo.
 	set /p input=?^>
