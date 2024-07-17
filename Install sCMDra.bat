@@ -157,7 +157,7 @@ goto :eof
 	if not exist "%install_dir%\" mkdir "%install_dir%\"
 	ping 192.0.2.2 -n 1 -w 1000 > nul
 	copy "___cecho.exe" "%install_dir%\">nul
-	copy "___repo.bat" "%install_dir%\repo.bat">nul
+	copy "sCMDra.bat" "%install_dir%\repo.bat">nul
 	cd %install_dir%
 	echo Initializing install directory . . .
 
@@ -275,7 +275,7 @@ goto :eof
 				)
 			)
 		)
-		
+
 		:: If the current character was not in the list, throw error.
 		if %found% LSS 1 (
 			call :invalid_param %1

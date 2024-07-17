@@ -70,13 +70,13 @@ Even if you use the automatic installer, you will need to **manually** add the i
 1. Run `Install sCMDra.bat` and follow the steps within.
 
 ### Manual Installation
-1. Create an installation directory (`C:\sCMDra\` is `Install sCMDra.bat`'s default).
+1. Create an installation directory (For example, `C:\sCMDra\`).
 2. Add the installation directory to your user's environment Path variable.
-3. Relocate `___repo.bat` and `___cecho.exe` to your installation directory.
-4. Inside `___repo.bat`, Find and replace in instances of `INSTALL_TEMP` with your installation directory, without quotes.
-5. Inside `___repo.bat`, Find and replace in instances of `REPO_TEMP` with where your repositories are located, without quotes.
-6. Rename `___repo.bat` to the keyword you'd like to use to access sCMDra (`repo.bat` is `Install sCMDra.bat`'s default).
-   * You will not need to type the `.bat` file extension to access sCMDra in Command Prompt, but be sure to include the extension in the file's name.
+3. Relocate `sCMDra.bat` and `___cecho.exe` to your installation directory.
+4. Inside `sCMDra.bat`, Find and replace in instances of `INSTALL_TEMP` with your installation directory, without quotes.
+5. Inside `sCMDra.bat`, Find and replace in instances of `REPO_TEMP` with where your repositories are located, without quotes.
+6. Rename `sCMDra.bat` to the keyword you'd like to use to access sCMDra (For example, "`repo.bat`", "`$.bat`", or "`projects.bat`").
+   **You will not need to type the `.bat` file extension to access sCMDra in Command Prompt, but be sure to include the extension in the file's name.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
