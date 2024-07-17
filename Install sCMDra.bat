@@ -64,7 +64,7 @@ set repo_dir=""
 	echo.
 	___cecho {0F}  1{07} - {0A}Simple Installation{07}
 	echo.
-	echo       Set the install directory to C:\sCMDra
+	echo       Set the install directory to "C:\sCMDra\"
 	echo       Set the access command to "repo"
 	echo.
 	___cecho {0F}  2{07} - {0C}Custom Installation{07}
@@ -145,7 +145,7 @@ goto :eof
 :: Asks the user where their repo's folder is and does the
 :: actual installation itself.
 :install
-	echo Please select where your repos are stored. (For example, C:\users\%username%\source\repos)
+	echo Please select where your repos are stored. (For example, C:\users\%username%\Documents\GitHub)
 	set folder=NONESELECTED
 	call :choose_folder
 	call :no_folder_selected :install
@@ -163,8 +163,8 @@ goto :eof
 
 	:: Replaces the filler keywords for the installation directoryand
 	:: the repo access command with their actual contents.
-	powershell -Command "(gc repo.bat) -replace 'INSTALL_FILLER', '%install_dir%' | Out-File -encoding ASCII repo.bat"
-	powershell -Command "(gc repo.bat) -replace 'REPO_FILLER', '%repo_dir%' | Out-File -encoding ASCII repo.bat"
+	powershell -Command "(gc repo.bat) -replace 'INSTALL_TEMP', '%install_dir%' | Out-File -encoding ASCII repo.bat"
+	powershell -Command "(gc repo.bat) -replace 'REPO_TEMP', '%repo_dir%' | Out-File -encoding ASCII repo.bat"
 
 	echo Naming access command . . .
 	ren "repo.bat" "%acc_command:"=%.bat"
@@ -276,7 +276,6 @@ goto :eof
 			)
 		)
 		
-		echo "%found%" "!found!"
 		:: If the current character was not in the list, throw error.
 		if %found% LSS 1 (
 			call :invalid_param %1
