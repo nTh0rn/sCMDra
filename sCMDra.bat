@@ -2,7 +2,7 @@
 title Repo Selection
 setlocal EnableDelayedExpansion
 @chcp 65001>nul
-set original_dir=%CD%
+set original_dir="%CD%"
 :go_to_top
 set /a numofdirs=0
 set /a i=0
