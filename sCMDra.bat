@@ -13,7 +13,7 @@ cd "REPO_TEMP"
 del "INSTALL_TEMP\dirs.txt">nul
 
 ::Load current directory's into dirs.txt
-dir /b /o:d >> "INSTALL_TEMP\dirs.txt"
+dir /b /o:-d >> "INSTALL_TEMP\dirs.txt"
 
 ::Read dirs.txt
 for /F "tokens=* delims=" %%a in ('Type "%dirs%"') do (
@@ -29,10 +29,15 @@ set /a helpnum=!numofdirs!+1
 echo.
 "INSTALL_TEMP\___cecho" {0F}  !helpnum!{07} - Additional Options
 
-set /a exitnum=!helpnum!+1
+set /a reponum=!helpnum!+1
 echo.
-"INSTALL_TEMP\___cecho" {0F}  !exitnum!{07} - Exit
+"INSTALL_TEMP\___cecho" {0F}  !reponum!{07} - Exit to REPO_TEMP
+
+set /a exitnum=!reponum!+1
 echo.
+"INSTALL_TEMP\___cecho" {0F}  !exitnum!{07} - Exit to !original_dir:"=!
+echo.
+
 cd ..
 goto select_repo
 
@@ -130,9 +135,17 @@ set /p input=?^>
 
 if /I "!input!"=="!exitnum!" (
 	echo.
-	"INSTALL_TEMP\___cecho" {4F}Exiting to %original_dir%{07}
+	"INSTALL_TEMP\___cecho" {4F}Exiting to %original_dir:"=%{07}
 	echo.
-	cd %original_dir%
+	goto :eof
+)
+
+if /I "!input!"=="!reponum!" (
+	echo.
+	"INSTALL_TEMP\___cecho" {4F}Exiting to REPO_TEMP{07}
+	echo.
+	endlocal
+	cd "REPO_TEMP"
 	goto :eof
 )
 
