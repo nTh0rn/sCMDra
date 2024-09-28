@@ -119,7 +119,12 @@ goto select_repo
 	:: statement surrounding the code below.
 	if EXIST "REPO_TEMP\%fold:"=%\.git" (
 		set /a numofdirs+=1
-		"INSTALL_TEMP\___cecho" {0F}  !numofdirs!{07} - %fold:"=%
+		
+		if !numofdirs! LSS 10 (
+			"INSTALL_TEMP\___cecho" {0F}   !numofdirs!{07} - %fold:"=%
+		) else (
+			"INSTALL_TEMP\___cecho" {0F}  !numofdirs!{07} - %fold:"=%
+		)
 		echo.
 		set jump_to_repo_!numofdirs!="REPO_TEMP\%fold:"=%"
 	)
