@@ -89,6 +89,8 @@ Access sCMDra by typing in your keyword into Command Prompt from any directory (
 
 ![Screenshot](https://nthorn.com/images/sCMDra/sCMDra.png)
 
+Any repository can be accessed by typing its index or title.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
