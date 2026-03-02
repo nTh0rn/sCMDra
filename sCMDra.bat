@@ -127,6 +127,7 @@ goto select_repo
         )
         echo.
         set jump_to_repo_!numofdirs!="REPO_TEMP\%fold:"=%"
+        set repo_name_!numofdirs!=%fold:"=%
     )
     goto :eof
 
@@ -199,11 +200,21 @@ set usableinput="jump_to_repo_!input:"=!"
 set usableinput="!%usableinput:"=%!"
 
 if "%usableinput:"=%"=="" (
+    set input_name=!input:"=!
+    for /L %%j in (1,1,!numofdirs!) do (
+        if /I "!repo_name_%%j!"=="!input_name!" (
+            set usableinput="!jump_to_repo_%%j!"
+            goto repo_found
+        )
+    )
+    
     echo.
     "INSTALL_TEMP\___cecho" {4F}Invalid option.{07}
     echo.
     goto select_repo
 )
+
+:repo_found
 echo %usableinput% >> "INSTALL_TEMP\dirs.txt"
 echo %usableinput% > "INSTALL_TEMP\dirs.txt"
 endlocal
