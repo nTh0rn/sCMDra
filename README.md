@@ -138,7 +138,7 @@ Project Link: [https://github.com/nTh0rn/sCMDra](https://github.com/nTh0rn/sCMDr
 ## Acknowledgments
 
 * [Batch UAC prompt](https://stackoverflow.com/a/10052222/4689611)
-* [Echo with colors](https://www.codeproject.com/Articles/17033/Add-Colors-to-Batch-Files)
+* [Echo with colors (archived)](https://web.archive.org/web/20251206084911/https://www.codeproject.com/articles/Add-Colors-to-Batch-Files#comments-section)
 * [Folder selector](https://stackoverflow.com/a/15885133/4689611)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
