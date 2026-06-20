@@ -19,7 +19,8 @@ if '%errorlevel%' NEQ '0' (
 
     "%temp%\getadmin.vbs"
     del "%temp%\getadmin.vbs"
-    exit
+    echo Continue installation in new window.
+    exit /b
 :gotAdmin
     pushd "%CD%"
     CD /D "%~dp0"
@@ -137,7 +138,7 @@ set repo_dir=""
 :choose_folder
 set "psCommand="(new-object -COM 'Shell.Application')^
 .BrowseForFolder(0,'Please choose a folder.',0,0).self.path""
-for /f "usebackq delims=" %%I in (`powershell %psCommand%`) do set "folder=%%I"
+for /f "usebackq delims=" %%I in (`powershell -NoProfile -NonInteractive %psCommand%`) do set "folder=%%I"
 goto :eof
 
 :: Installation Function

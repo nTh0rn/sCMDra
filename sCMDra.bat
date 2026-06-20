@@ -1,5 +1,4 @@
 @echo off
-title Repo Selection
 setlocal EnableDelayedExpansion
 @chcp 65001>nul
 set original_dir="%CD%"
@@ -221,7 +220,6 @@ endlocal
 set /p usableinput=<"INSTALL_TEMP\dirs.txt"
 del "INSTALL_TEMP\dirs.txt"
 @RD /S /Q "INSTALL_TEMP\___ENDOFSTRING___">NUL 2>&1
-title Command Prompt
 cd "%usableinput:"=%"
 if NOT "%usableinput:"=%"=="" (
     start "" "%CD:"=%"
