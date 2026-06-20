@@ -204,7 +204,7 @@ goto :eof
     echo.
     echo.
     pause>nul
-    exit
+    exit /b
 
 :: Check For No Folder Function
 ::
